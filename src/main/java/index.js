@@ -6,7 +6,7 @@ TODO: Add the appropriate default value(s) to the specified parameter(s).
     @param {number} taxRate - An optional parameter represents the percentage of an individuals gross monthly income that will go toward taxes.  The default value should be '15'.
     @returns {number} - the monetary value of the amount of gross income that went toward taxes.
 */
-function calculateTaxed(income, taxRate) {
+function calculateTaxed(income, taxRate = 15) {
     return income * (taxRate / 100);
 }
 
@@ -18,7 +18,7 @@ TODO: Add the appropriate default value(s) to the specified parameter(s).
     @param {number} expensePercentage - An optional parameter that represents the percentage of an individuals gross monthly income that will go toward expenses. The default value should be '50'.
     @returns {number} - the monetary value of the amount of gross income that went toward expenses.
  */
-function calculateExpenses(income, expensePercentage) {
+function calculateExpenses(income, expensePercentage = 50) {
     return income * (expensePercentage / 100);
 }
 
@@ -30,7 +30,7 @@ TODO: Add the appropriate default value(s) to the specified parameter(s).
     @param {number} savePercentage - An optional parameter that represents the percentage of an individuals gross monthly income that will go toward expenses. The default value should be '20'.
     @returns {number} - the monetary value of the amount of gross income that went toward savings.
  */
-function calculateSaved(income, savePercentage) {
+function calculateSaved(income, savePercentage = 20) {
     return income * (savePercentage / 100);
 }
 
